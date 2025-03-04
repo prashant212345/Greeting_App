@@ -10,6 +10,22 @@
         "tags": [
           "HelloGreeting"
         ],
+        "parameters": [
+          {
+            "name": "firstName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "lastName",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -139,11 +155,11 @@
       "RequestModel": {
         "type": "object",
         "properties": {
-          "key": {
+          "firstName": {
             "type": "string",
             "nullable": true
           },
-          "value": {
+          "lastName": {
             "type": "string",
             "nullable": true
           }

@@ -25,13 +25,13 @@ namespace HelloGreetingApplication.Controllers
         /// </summary>
         /// <returns>Hello World!</returns>
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult Get([FromQuery]string? firstName = null, [FromQuery]string? lastName = null)
         {
-            string message = _greetingBL.GetGreetingMessage();
+            string message = _greetingBL.GetGreetingMessage(firstName, lastName);
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
                 Success = true,
-                Message = "Hello to Greeting App API Endpoint",
+                Message = "Greeting fetched Successfully",
                 Data = message
             };
             Logger.Info("GET request received");
@@ -48,7 +48,7 @@ namespace HelloGreetingApplication.Controllers
             {
                 Success = true,
                 Message = "Post Request Received successfully",
-                Data = "Key:" + requestModel.Key + " Value:" + requestModel.Value
+                Data = "First Name:" + requestModel.FirstName + " Last Name:" + requestModel.LastName
             };
             Logger.Info("POST request received and processed.");
             return Ok(responseModel);
@@ -64,7 +64,7 @@ namespace HelloGreetingApplication.Controllers
             {
                 Success = true,
                 Message = "PUT request processed successfully. Greeting message updated.",
-                Data = "Updated Key: " + requestModel.Key + ", Updated Value: " + requestModel.Value
+                Data = "Updated First Name: " + requestModel.FirstName + ", Updated Last Name: " + requestModel.LastName
             };
             Logger.Info("PUT request received and processed.");
             return Ok(responseModel);
@@ -80,7 +80,7 @@ namespace HelloGreetingApplication.Controllers
             {
                 Success = true,
                 Message = "PATCH request processed successfully. Greeting message partially updated.",
-                Data = "Updated Key: " + requestModel.Key + ", Updated Value: " + requestModel.Value
+                Data = "Updated First Name: " + requestModel.FirstName + ", Updated Last Name: " + requestModel.LastName
             };
             Logger.Info("PATCH request received and processed.");
             return Ok(responseModel);
@@ -96,7 +96,7 @@ namespace HelloGreetingApplication.Controllers
             {
                 Success = true,
                 Message = "DELETE request processed successfully. Greeting message deleted.",
-                Data = "Deleted Key: " + requestModel.Key + ", Deleted Value: " + requestModel.Value
+                Data = "Deleted First Name: " + requestModel.FirstName + ", Deleted Last Name: " + requestModel.LastName
             };
             Logger.Info("DELETE request received and processed.");
             return Ok(responseModel);

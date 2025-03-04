@@ -8,15 +8,15 @@ namespace ModelLayer.Model
 {
     public class RequestModel
     {
-        public string Key {  get; set; }
-        public string Value { get; set; }
+        public string FirstName {  get; set; }
+        public string LastName { get; set; }
 
         public RequestModel() { }
 
-        public RequestModel(string key, string value)
+        public RequestModel(string firstName, string lastName)
         {
-            Key = key;
-            Value = value ?? throw new ArgumentNullException(nameof(value), "Value cannot be null");
+            FirstName = firstName;
+            LastName = lastName;
         }
     }
 }
