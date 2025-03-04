@@ -1,8 +1,12 @@
+using BusinessLayer.Interface;
+using BusinessLayer.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NLog;
 using NLog.Web;
+using RepositoryLayer.Interface;
+using RepositoryLayer.Service;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 try
@@ -19,6 +23,9 @@ try
     builder.Services.AddControllers();
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
+
+    builder.Services.AddScoped<IGreetingBL, GreetingBL>();
+    builder.Services.AddScoped<IGreetingRL, GreetingRL>();
 
     var app = builder.Build();
 

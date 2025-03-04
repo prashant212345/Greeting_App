@@ -13,12 +13,12 @@ namespace HelloGreetingApplication.Controllers
     public class HelloGreetingController : ControllerBase
     {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-        //private readonly IGreetingBL _greetingBL;
+        private readonly IGreetingBL _greetingBL;
 
-        //public HelloGreetingController(IGreetingBL greetingBL)
-        //{
-        //    _greetingBL = greetingBL;
-        //}
+        public HelloGreetingController(IGreetingBL greetingBL)
+        {
+            _greetingBL = greetingBL;
+        }
 
         /// <summary>
         /// Get Method to get the greeting message
@@ -27,11 +27,12 @@ namespace HelloGreetingApplication.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            string message = _greetingBL.GetGreetingMessage();
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
                 Success = true,
                 Message = "Hello to Greeting App API Endpoint",
-                Data = "Get Request Received!"
+                Data = message
             };
             Logger.Info("GET request received");
             return Ok(responseModel);

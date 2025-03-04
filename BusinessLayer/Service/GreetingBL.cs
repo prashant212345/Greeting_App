@@ -15,5 +15,9 @@ namespace BusinessLayer.Service
         {
             _greetingRL = greetingRL;
         }
+        public string GetGreetingMessage()
+        {
+            return "Hello World";
+        }
     }
 }
