@@ -1,0 +1,28 @@
+# Ignore Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.vssscc
+*.cache
+*.pdb
+
+# Ignore build outputs
+bin/
+obj/
+*.dll
+*.exe
+
+# Ignore .NET Core specific files
+project.lock.json
+project.assets.json
+*.csproj.user
+*.db
+
+# Ignore logs and temporary files
+logs/
+*.log
+*.tmp
+
+# Ignore package manager dependencies
+node_modules/
+packages/
