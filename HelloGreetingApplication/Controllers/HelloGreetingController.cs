@@ -2,12 +2,10 @@ using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using NLog;
 using BusinessLayer.Interface;
+using ModelLayer.Model.Entities;
 
 namespace HelloGreetingApplication.Controllers
 {
-    /// <summary>
-    /// Class providing API for Hellogreeting
-    /// </summary>
     [ApiController]
     [Route("[controller]")]
     public class HelloGreetingController : ControllerBase
@@ -20,10 +18,6 @@ namespace HelloGreetingApplication.Controllers
             _greetingBL = greetingBL;
         }
 
-        /// <summary>
-        /// Get Method to get the greeting message
-        /// </summary>
-        /// <returns>Hello World!</returns>
         [HttpGet]
         public IActionResult Get([FromQuery]string? firstName = null, [FromQuery]string? lastName = null)
         {
@@ -44,62 +38,27 @@ namespace HelloGreetingApplication.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] RequestModel requestModel)
         {
+            string responseMessage = _greetingBL.SaveGreetingMessage(requestModel.Value);
             ResponseModel<string> responseModel = new ResponseModel<string>
             {
                 Success = true,
-                Message = "Post Request Received successfully",
-                Data = "First Name:" + requestModel.FirstName + " Last Name:" + requestModel.LastName
+                Message = "Post Request Processed",
+                Data = responseMessage
             };
             Logger.Info("POST request received and processed.");
             return Ok(responseModel);
         }
 
-        /// <summary>
-        /// Put method to update the greeting message
-        /// </summary>
-        [HttpPut]
-        public IActionResult Put([FromBody] RequestModel requestModel)
-        {
-            ResponseModel<string> responseModel = new ResponseModel<string>
-            {
-                Success = true,
-                Message = "PUT request processed successfully. Greeting message updated.",
-                Data = "Updated First Name: " + requestModel.FirstName + ", Updated Last Name: " + requestModel.LastName
-            };
-            Logger.Info("PUT request received and processed.");
-            return Ok(responseModel);
-        }
 
-        /// <summary>
-        /// Patch method to partially update the greeting message
-        /// </summary>
-        [HttpPatch]
-        public IActionResult Patch([FromBody] RequestModel requestModel)
+        [HttpGet("{id}")]
+        public IActionResult GetById(int id)
         {
-            ResponseModel<string> responseModel = new ResponseModel<string>
+            Greeting greeting = _greetingBL.GetGreetingById(id);
+            if(greeting == null)
             {
-                Success = true,
-                Message = "PATCH request processed successfully. Greeting message partially updated.",
-                Data = "Updated First Name: " + requestModel.FirstName + ", Updated Last Name: " + requestModel.LastName
-            };
-            Logger.Info("PATCH request received and processed.");
-            return Ok(responseModel);
-        }
-
-        /// <summary>
-        /// Delete method to remove a greeting message
-        /// </summary>
-        [HttpDelete]
-        public IActionResult Delete([FromBody] RequestModel requestModel)
-        {
-            ResponseModel<string> responseModel = new ResponseModel<string>
-            {
-                Success = true,
-                Message = "DELETE request processed successfully. Greeting message deleted.",
-                Data = "Deleted First Name: " + requestModel.FirstName + ", Deleted Last Name: " + requestModel.LastName
-            };
-            Logger.Info("DELETE request received and processed.");
-            return Ok(responseModel);
+                return NotFound(new { Success = false, Message = "Greeting not found" });
+            }
+            return Ok(new { Success = true, Data = greeting.Message });
         }
     }
 }

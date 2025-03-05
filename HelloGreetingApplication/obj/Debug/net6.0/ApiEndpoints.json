@@ -38,47 +38,15 @@
   },
   {
     "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Put",
-    "RelativePath": "HelloGreeting",
-    "HttpMethod": "PUT",
+    "Method": "GetById",
+    "RelativePath": "HelloGreeting/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "requestModel",
-        "Type": "ModelLayer.Model.RequestModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Patch",
-    "RelativePath": "HelloGreeting",
-    "HttpMethod": "PATCH",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "requestModel",
-        "Type": "ModelLayer.Model.RequestModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "HelloGreetingApplication.Controllers.HelloGreetingController",
-    "Method": "Delete",
-    "RelativePath": "HelloGreeting",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "requestModel",
-        "Type": "ModelLayer.Model.RequestModel",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

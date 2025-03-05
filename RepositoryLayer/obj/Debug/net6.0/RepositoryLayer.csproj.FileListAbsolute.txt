@@ -26,3 +26,5 @@ C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\ModelLayer.pdb
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.csproj.AssemblyReference.cache
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\Reposito.A0A61804.Up2Date
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\RepositoryLayer\bin\Debug\net6.0\RepositoryLayer.runtimeconfig.json
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\RepositoryLayer\obj\Debug\net6.0\RepositoryLayer.genruntimeconfig.cache
