@@ -50,15 +50,15 @@ namespace HelloGreetingApplication.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public IActionResult GetById(int id)
-        {
-            Greeting greeting = _greetingBL.GetGreetingById(id);
-            if(greeting == null)
-            {
-                return NotFound(new { Success = false, Message = "Greeting not found" });
-            }
-            return Ok(new { Success = true, Data = greeting.Message });
-        }
+        //[HttpGet("{id}")]
+        //public IActionResult GetById(int id)
+        //{
+        //    Greeting greeting = _greetingBL.GetGreetingById(id);
+        //    if(greeting == null)
+        //    {
+        //        return NotFound(new { Success = false, Message = "Greeting not found" });
+        //    }
+        //    return Ok(new { Success = true, Data = greeting.Message });
+        //}
     }
 }

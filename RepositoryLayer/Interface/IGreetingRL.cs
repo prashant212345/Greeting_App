@@ -11,6 +11,6 @@ namespace RepositoryLayer.Interface
     {
         string GetGreetingMessage(string firstName, string lastName);
         string SaveGreetingMessage(string message);
-        Greeting GetGreetingById(int id);
+        //Greeting GetGreetingById(int id);
     }
 }

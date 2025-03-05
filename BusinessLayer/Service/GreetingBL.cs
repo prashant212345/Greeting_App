@@ -24,9 +24,9 @@ namespace BusinessLayer.Service
         {
             return _greetingRL.SaveGreetingMessage(message);
         }
-        public Greeting GetGreetingById(int id)
-        {
-            return _greetingRL.GetGreetingById(id);
-        }
+        //public Greeting GetGreetingById(int id)
+        //{
+        //    return _greetingRL.GetGreetingById(id);
+        //}
     }
 }

@@ -43,9 +43,9 @@ namespace RepositoryLayer.Service
             _context.SaveChanges();
             return "Greeting message saved successfully!";
         }
-        public Greeting GetGreetingById(int id)
-        {
-            return _context.greetings.FirstOrDefault(g => g.Id == id);
-        }
+        //public Greeting GetGreetingById(int id)
+        //{
+        //    return _context.greetings.FirstOrDefault(g => g.Id == id);
+        //}
     }
 }
