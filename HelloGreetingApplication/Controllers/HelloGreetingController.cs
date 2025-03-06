@@ -60,5 +60,16 @@ namespace HelloGreetingApplication.Controllers
             }
             return Ok(new { Success = true, Data = greeting.Message });
         }
+
+        [HttpGet("all")]
+        public IActionResult GetAll()
+        {
+            List<Greeting> greetings = _greetingBL.GetAllGreetings();
+            if(greetings.Count == 0)
+            {
+                return NotFound(new { Success = false, Message = "No Greetings found" });
+            }
+            return Ok(new { Success = true, Data = greetings });
+        }
     }
 }
