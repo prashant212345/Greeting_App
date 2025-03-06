@@ -13,5 +13,6 @@ namespace BusinessLayer.Interface
         string SaveGreetingMessage(string message);
         Greeting GetGreetingById(int id);
         List<Greeting> GetAllGreetings();
+        bool EditGreetingMessage(int id, string newMessage);
     }
 }

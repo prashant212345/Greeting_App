@@ -71,5 +71,15 @@ namespace HelloGreetingApplication.Controllers
             }
             return Ok(new { Success = true, Data = greetings });
         }
+        [HttpPut("{id}")]
+        public IActionResult EditGreeting(int id, [FromBody] Greeting greeting)
+        {
+            bool isUpdated = _greetingBL.EditGreetingMessage(id, greeting.Message);
+            if(!isUpdated)
+            {
+                return NotFound(new { Success = false, Message = "Greeting Not found" });
+            }
+            return Ok(new { Success = true, Message = "Greeting Updated Successfully" });
+        }
     }
 }
