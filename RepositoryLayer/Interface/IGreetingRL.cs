@@ -14,5 +14,6 @@ namespace RepositoryLayer.Interface
         Greeting GetGreetingById(int id);
         List<Greeting> GetAllGreetings();
         bool EditGreetingMessage(int id, string newMessage);
+        bool DeleteGreetingMessage(int id);
     }
 }

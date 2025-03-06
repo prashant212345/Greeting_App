@@ -81,5 +81,15 @@ namespace HelloGreetingApplication.Controllers
             }
             return Ok(new { Success = true, Message = "Greeting Updated Successfully" });
         }
+        [HttpDelete("{id}")]
+        public IActionResult DeleteGreeting(int id)
+        {
+            bool isDeleted = _greetingBL.DeleteGreetingMessage(id);
+            if (!isDeleted)
+            {
+                return NotFound(new { Success = false, Message = "Greeting Not found" });
+            }
+            return Ok(new { Success = true, Message = "Greeting Deleted Successfully" });
+        }
     }
 }

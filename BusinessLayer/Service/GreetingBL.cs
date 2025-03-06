@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Service
 {
-    public class GreetingBL:IGreetingBL
+    public class GreetingBL : IGreetingBL
     {
         public readonly IGreetingRL _greetingRL;
         public GreetingBL(IGreetingRL greetingRL)
@@ -35,6 +35,10 @@ namespace BusinessLayer.Service
         public bool EditGreetingMessage(int id, string newMessage)
         {
             return _greetingRL.EditGreetingMessage(id, newMessage);
+        }
+        public bool DeleteGreetingMessage(int id)
+        {
+            return _greetingRL.DeleteGreetingMessage(id);
         }
     }
 }
