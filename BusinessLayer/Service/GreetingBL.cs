@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using Middleware.GlobalExceptionHandler;
 using ModelLayer.Model.Entities;
 using RepositoryLayer.Interface;
 using System;
@@ -26,7 +27,12 @@ namespace BusinessLayer.Service
         }
         public Greeting GetGreetingById(int id)
         {
-            return _greetingRL.GetGreetingById(id);
+            var greeting = _greetingRL.GetGreetingById(id);
+            if (greeting == null)
+            {
+                throw new ExceptionHandler("Greeting not found!", 404);
+            }
+            return greeting;
         }
         public List<Greeting> GetAllGreetings()
         {

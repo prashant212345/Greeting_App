@@ -36,3 +36,5 @@ C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0\ref\BusinessLayer.dll
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\BusinessLayer\bin\Debug\net6.0\BusinessLayer.runtimeconfig.json
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\BusinessLayer\obj\Debug\net6.0\BusinessLayer.genruntimeconfig.cache
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\BusinessLayer\bin\Debug\net6.0\Middleware.dll
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\BusinessLayer\bin\Debug\net6.0\Middleware.pdb

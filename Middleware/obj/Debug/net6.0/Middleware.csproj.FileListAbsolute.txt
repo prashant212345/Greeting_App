@@ -1,0 +1,13 @@
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\bin\Debug\net6.0\Middleware.deps.json
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\bin\Debug\net6.0\Middleware.dll
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\bin\Debug\net6.0\Middleware.pdb
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.csproj.AssemblyReference.cache
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.AssemblyInfoInputs.cache
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.AssemblyInfo.cs
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.csproj.CoreCompileInputs.cache
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.sourcelink.json
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.dll
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\refint\Middleware.dll
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\Middleware.pdb
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\Middleware\obj\Debug\net6.0\ref\Middleware.dll

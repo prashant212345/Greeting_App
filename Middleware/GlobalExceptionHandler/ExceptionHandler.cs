@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Middleware.GlobalExceptionHandler
 {
-    class ExceptionHandler
+    public class ExceptionHandler : Exception
     {
+        public int StatusCode { get; }
+        public ExceptionHandler(string message, int statusCode = 500) : base(message)
+        {
+            StatusCode = statusCode;
+        }
     }
 }
