@@ -10,10 +10,8 @@ namespace RepositoryLayer.Context
 {
     public class GreetingContext : DbContext
     {
-        public GreetingContext(DbContextOptions<GreetingContext> options) : base(options)
-        {
-            
-        }
+        public GreetingContext(DbContextOptions<GreetingContext> options) : base(options) { }
         public DbSet<Greeting> greetings { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

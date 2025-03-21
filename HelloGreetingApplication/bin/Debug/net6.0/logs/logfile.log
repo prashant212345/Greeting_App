@@ -1939,3 +1939,66 @@ WHERE [g].[Id] = @__id_0
 2025-03-08 16:06:01.4075 Info Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetById (HelloGreetingApplication) in 4467.8807ms 
 2025-03-08 16:06:01.4588 Info Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetById (HelloGreetingApplication)' 
 2025-03-08 16:06:01.4872 Info Request finished HTTP/2 GET https://localhost:7208/HelloGreeting/4 - - - 404 - application/json;+charset=utf-8 4643.5933ms 
+2025-03-20 21:53:53.3047 Info Starting application... 
+2025-03-20 21:53:53.5029 Error Application startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\Program.cs:line 38
+2025-03-20 21:54:02.7497 Info Starting application... 
+2025-03-20 21:54:02.8513 Error Application startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\Program.cs:line 38
+2025-03-20 21:54:16.1090 Info Starting application... 
+2025-03-20 21:54:16.2323 Error Application startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\Program.cs:line 38
+2025-03-21 07:37:45.8648 Info Starting application... 
+2025-03-21 07:37:47.5527 Info Now listening on: https://localhost:7208 
+2025-03-21 07:37:47.5634 Info Now listening on: http://localhost:5254 
+2025-03-21 07:37:47.6609 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 07:37:47.6609 Info Hosting environment: Development 
+2025-03-21 07:37:47.6609 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 07:37:48.3930 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 07:37:48.8178 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 429.6372ms 
+2025-03-21 07:37:48.8241 Info Request starting HTTP/2 GET https://localhost:7208/swagger/swagger-ui.css - - 
+2025-03-21 07:37:48.8241 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 07:37:48.8241 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.css - - 
+2025-03-21 07:37:48.8241 Info Request starting HTTP/2 GET https://localhost:7208/swagger/swagger-ui-standalone-preset.js - - 
+2025-03-21 07:37:48.8241 Info Request starting HTTP/2 GET https://localhost:7208/swagger/swagger-ui-bundle.js - - 
+2025-03-21 07:37:48.8530 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 07:37:48.8530 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 07:37:48.8530 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.3260ms 
+2025-03-21 07:37:48.8831 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 58.5625ms 
+2025-03-21 07:37:48.8925 Info The file /swagger-ui.css was not modified 
+2025-03-21 07:37:48.8925 Info The file /swagger-ui-bundle.js was not modified 
+2025-03-21 07:37:48.8925 Info The file /index.css was not modified 
+2025-03-21 07:37:48.8925 Info The file /swagger-ui-standalone-preset.js was not modified 
+2025-03-21 07:37:48.8925 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.css - - - 304 - text/css 69.1768ms 
+2025-03-21 07:37:48.8925 Info Request finished HTTP/2 GET https://localhost:7208/swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 68.5250ms 
+2025-03-21 07:37:48.8925 Info Request finished HTTP/2 GET https://localhost:7208/swagger/swagger-ui.css - - - 304 - text/css 69.4703ms 
+2025-03-21 07:37:48.8925 Info Request finished HTTP/2 GET https://localhost:7208/swagger/swagger-ui-bundle.js - - - 304 - application/javascript 66.3639ms 
+2025-03-21 07:37:49.0280 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 175.0840ms 
+2025-03-21 07:37:49.1421 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 07:37:49.1505 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4274ms 
+2025-03-21 07:37:49.1505 Info Request starting HTTP/2 GET https://localhost:7208/swagger/favicon-32x32.png - - 
+2025-03-21 07:37:49.1708 Info Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2025-03-21 07:37:49.1708 Info Request finished HTTP/2 GET https://localhost:7208/swagger/favicon-32x32.png - - - 200 628 image/png 9.7934ms 
+2025-03-21 07:38:15.5914 Info Request starting HTTP/2 GET https://localhost:7208/HelloGreeting/all - - 
+2025-03-21 07:38:15.6097 Info Executing endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (HelloGreetingApplication)' 
+2025-03-21 07:38:15.6543 Info Route matched with {action = "GetAll", controller = "HelloGreeting"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller HelloGreetingApplication.Controllers.HelloGreetingController (HelloGreetingApplication). 
+2025-03-21 07:38:17.6359 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 07:38:19.7734 Info Executed DbCommand (104ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [g].[Id], [g].[Message]
+FROM [GreetingMessages] AS [g] 
+2025-03-21 07:38:19.9698 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`2[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[ModelLayer.Model.Entities.Greeting, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 07:38:19.9924 Info Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (HelloGreetingApplication) in 4327.8697ms 
+2025-03-21 07:38:19.9924 Info Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (HelloGreetingApplication)' 
+2025-03-21 07:38:20.0343 Info Request finished HTTP/2 GET https://localhost:7208/HelloGreeting/all - - - 200 - application/json;+charset=utf-8 4442.9172ms 

@@ -1,4 +1,5 @@
-﻿using ModelLayer.Model.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using ModelLayer.Model.Entities;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using System;
@@ -72,6 +73,17 @@ namespace RepositoryLayer.Service
                 return true;
             }
             return false;
+        }
+
+        public async Task<User> GetUserByEmail(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
+        }
+        public async Task<User> RegisterUser(User user)
+        {
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+            return user;
         }
     }
 }

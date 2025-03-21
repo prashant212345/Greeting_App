@@ -1,10 +1,16 @@
 ﻿using BusinessLayer.Interface;
+using Microsoft.IdentityModel.Tokens;
 using Middleware.GlobalExceptionHandler;
+using ModelLayer.Model.DTO;
 using ModelLayer.Model.Entities;
 using RepositoryLayer.Interface;
+using RepositoryLayer.Service;
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -46,5 +52,50 @@ namespace BusinessLayer.Service
         {
             return _greetingRL.DeleteGreetingMessage(id);
         }
+
+        public async Task<string> Register(RegisterDTO model)
+        {
+            var existingUser = await _greetingRL.GetUserByEmail(model.Email);
+            if (existingUser != null)
+            {
+                return "User already exists";
+            }
+
+            var user = new User
+            {
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                Email = model.Email,
+                Password = HashPassword(model.Password)
+            };
+
+            await _greetingRL.RegisterUser(user);
+            return "User registered successfully";
+        }
+        private string HashPassword(string password)
+        {
+            const int SaltSize = 16;  // 16 bytes salt
+            const int HashSize = 32;  // 32 bytes hash
+            const int Iterations = 10000; // PBKDF2 iterations
+
+            byte[] salt = new byte[SaltSize];
+            using (var rng = new RNGCryptoServiceProvider())
+            {
+                rng.GetBytes(salt);
+            }
+
+            using (var pbkdf2 = new Rfc2898DeriveBytes(password, salt, Iterations, HashAlgorithmName.SHA256))
+            {
+                byte[] hash = pbkdf2.GetBytes(HashSize);
+
+                byte[] hashBytes = new byte[SaltSize + HashSize];
+                Array.Copy(salt, 0, hashBytes, 0, SaltSize);
+                Array.Copy(hash, 0, hashBytes, SaltSize, HashSize);
+
+                return Convert.ToBase64String(hashBytes);
+            }
+        }
+
+
     }
 }
