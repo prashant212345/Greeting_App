@@ -22,5 +22,18 @@ namespace Register_JWT.Controllers
 
             return Ok(new { message = result });
         }
+
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(LoginDTO model)
+        {
+            var token = await _greetingBL.Login(model);
+            if (token == null)
+                return Unauthorized(new { message = "Invalid Credentials" });
+            if (token == "Invalid email or password")
+            {
+                return BadRequest(new { message = token });
+            }
+            return Ok(new { token });
+        }
     }
 }

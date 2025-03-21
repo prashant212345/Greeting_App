@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using Middleware.GlobalExceptionHandler;
 using ModelLayer.Model.DTO;
@@ -18,10 +19,12 @@ namespace BusinessLayer.Service
 {
     public class GreetingBL : IGreetingBL
     {
-        public readonly IGreetingRL _greetingRL;
-        public GreetingBL(IGreetingRL greetingRL)
+        private readonly IGreetingRL _greetingRL;
+        private readonly IConfiguration _configuration;
+        public GreetingBL(IGreetingRL greetingRL, IConfiguration configuration)
         {
             _greetingRL = greetingRL;
+            _configuration = configuration;
         }
         public string GetGreetingMessage(string? firstName, string? lastName)
         {
@@ -96,6 +99,55 @@ namespace BusinessLayer.Service
             }
         }
 
+        public async Task<string> Login(LoginDTO model)
+        {
+            var user = await _greetingRL.GetUserByEmail(model.Email);
+            if (user == null || !verifyPassword(model.Password, user.Password))
+            {
+                return "Invalid email or password";
+            }
+            return GenerateJwtToken(user);
+        }
+
+        private bool verifyPassword(string password, string storedHash)
+        {
+            byte[] hashBytes = Convert.FromBase64String(storedHash);
+            byte[] salt = new byte[16];
+            Array.Copy(hashBytes, 0, salt, 0, 16);
+
+            using (var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 10000, HashAlgorithmName.SHA256))
+            {
+                byte[] hash = pbkdf2.GetBytes(32);
+
+                for (int i = 0; i < 32; i++)
+                {
+                    if (hashBytes[i + 16] != hash[i])
+                        return false;
+                }
+            }
+            return true;
+        }
+        private string GenerateJwtToken(User user)
+        {
+            var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Secret"]);
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Sub, user.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("FirstName", user.FirstName),
+                new Claim("LastName", user.LastName)
+            };
+
+            var token = new JwtSecurityToken(
+                issuer: _configuration["Jwt:Issuer"],
+                audience: _configuration["Jwt:Audience"],
+                claims: claims,
+                expires: DateTime.UtcNow.AddHours(2),
+                signingCredentials: new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+            );
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
 
     }
 }

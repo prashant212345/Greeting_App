@@ -17,5 +17,6 @@ namespace BusinessLayer.Interface
         bool EditGreetingMessage(int id, string newMessage);
         bool DeleteGreetingMessage(int id);
         Task<string> Register(RegisterDTO model);
+        Task<string> Login(LoginDTO model);
     }
 }

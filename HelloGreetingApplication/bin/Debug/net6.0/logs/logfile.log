@@ -2002,3 +2002,189 @@ FROM [GreetingMessages] AS [g]
 2025-03-21 07:38:19.9924 Info Executed action HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (HelloGreetingApplication) in 4327.8697ms 
 2025-03-21 07:38:19.9924 Info Executed endpoint 'HelloGreetingApplication.Controllers.HelloGreetingController.GetAll (HelloGreetingApplication)' 
 2025-03-21 07:38:20.0343 Info Request finished HTTP/2 GET https://localhost:7208/HelloGreeting/all - - - 200 - application/json;+charset=utf-8 4442.9172ms 
+2025-03-21 07:51:34.3683 Info Starting application... 
+2025-03-21 07:51:35.4374 Info Now listening on: https://localhost:7208 
+2025-03-21 07:51:35.4374 Info Now listening on: http://localhost:5254 
+2025-03-21 07:51:35.5106 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 07:51:35.5106 Info Hosting environment: Development 
+2025-03-21 07:51:35.5106 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 07:51:36.7274 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 07:51:37.1332 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 411.7634ms 
+2025-03-21 07:51:37.1543 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 07:51:37.1664 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 07:51:37.1664 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 07:51:37.1664 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.5554ms 
+2025-03-21 07:51:37.1664 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 17.5231ms 
+2025-03-21 07:51:37.3002 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 133.3005ms 
+2025-03-21 07:51:37.5192 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 07:51:37.5273 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.1617ms 
+2025-03-21 08:19:53.0025 Info Starting application... 
+2025-03-21 08:19:53.9403 Info Now listening on: https://localhost:7208 
+2025-03-21 08:19:53.9403 Info Now listening on: http://localhost:5254 
+2025-03-21 08:19:53.9805 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 08:19:53.9805 Info Hosting environment: Development 
+2025-03-21 08:19:53.9805 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 08:19:54.7263 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 08:19:54.9833 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 258.7594ms 
+2025-03-21 08:19:54.9833 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 08:19:54.9833 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 08:19:54.9833 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 08:19:54.9953 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.4819ms 
+2025-03-21 08:19:54.9953 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 5.6374ms 
+2025-03-21 08:19:55.0473 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 54.4629ms 
+2025-03-21 08:19:55.1536 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 08:19:55.1536 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.8565ms 
+2025-03-21 08:20:16.8041 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/register application/json 106 
+2025-03-21 08:20:16.8109 Info Executing endpoint 'Register_JWT.Controllers.RegController.Register (HelloGreetingApplication)' 
+2025-03-21 08:20:16.8599 Info Route matched with {action = "Register", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ModelLayer.Model.DTO.RegisterDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 08:20:17.7778 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 08:20:18.8641 Info Executed DbCommand (91ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 08:20:19.0835 Info Executed DbCommand (29ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [FirstName], [LastName], [Password])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2025-03-21 08:20:19.1619 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 08:20:19.1682 Info Executed action Register_JWT.Controllers.RegController.Register (HelloGreetingApplication) in 2304.7603ms 
+2025-03-21 08:20:19.1682 Info Executed endpoint 'Register_JWT.Controllers.RegController.Register (HelloGreetingApplication)' 
+2025-03-21 08:20:19.1682 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/register application/json 106 - 200 - application/json;+charset=utf-8 2373.6788ms 
+2025-03-21 08:20:44.5896 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 08:20:44.6032 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:20:44.6032 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 08:20:44.6503 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 08:20:44.6949 Info Executed DbCommand (33ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 08:20:56.4165 Error Exception: Object reference not set to an instance of an object. 
+2025-03-21 08:20:56.4165 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 08:20:56.4165 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 11807.5353ms 
+2025-03-21 08:20:56.4165 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:20:56.4165 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 500 - application/json;+charset=utf-8 11829.0590ms 
+2025-03-21 08:25:21.9392 Info Starting application... 
+2025-03-21 08:25:22.0476 Error Application startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\Program.cs:line 38
+2025-03-21 08:31:24.2272 Info Starting application... 
+2025-03-21 08:31:25.0364 Info Now listening on: https://localhost:7208 
+2025-03-21 08:31:25.0424 Info Now listening on: http://localhost:5254 
+2025-03-21 08:31:25.0832 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 08:31:25.0832 Info Hosting environment: Development 
+2025-03-21 08:31:25.0832 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 08:31:25.5294 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 08:31:25.7691 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 241.1611ms 
+2025-03-21 08:31:25.7824 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 08:31:25.7824 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 08:31:25.7824 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 08:31:25.7824 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.2129ms 
+2025-03-21 08:31:25.7824 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 5.0438ms 
+2025-03-21 08:31:25.8375 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2514ms 
+2025-03-21 08:31:25.9137 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 08:31:25.9190 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.3242ms 
+2025-03-21 08:31:39.9729 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 08:31:39.9809 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:31:40.0485 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 08:31:41.2207 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 08:31:42.6794 Info Executed DbCommand (131ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 08:32:07.4890 Error Exception: Object reference not set to an instance of an object. 
+2025-03-21 08:32:07.4982 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 08:32:07.5113 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 27453.4251ms 
+2025-03-21 08:32:07.5113 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:32:07.5355 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 500 - application/json;+charset=utf-8 27562.6044ms 
+2025-03-21 08:32:25.8029 Info Starting application... 
+2025-03-21 08:32:26.0522 Info Now listening on: https://localhost:7208 
+2025-03-21 08:32:26.0561 Info Now listening on: http://localhost:5254 
+2025-03-21 08:32:26.0815 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 08:32:26.0815 Info Hosting environment: Development 
+2025-03-21 08:32:26.0815 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 08:32:26.6749 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 08:32:26.7874 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 112.9038ms 
+2025-03-21 08:32:26.8007 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 08:32:26.8007 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 08:32:26.8007 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 2.6668ms 
+2025-03-21 08:32:26.8007 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.7164ms 
+2025-03-21 08:32:26.8095 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 08:32:26.8391 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 29.5918ms 
+2025-03-21 08:32:27.1010 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 08:32:27.1055 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 4.4728ms 
+2025-03-21 08:32:40.4476 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 08:32:40.4476 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:32:40.5081 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 08:32:41.3318 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 08:32:42.1042 Info Executed DbCommand (92ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 08:32:42.2360 Error Exception: Object reference not set to an instance of an object. 
+2025-03-21 08:32:42.2360 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 08:32:42.2473 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 1736.0324ms 
+2025-03-21 08:32:42.2473 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:32:42.2473 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 500 - application/json;+charset=utf-8 1804.5929ms 
+2025-03-21 08:33:16.7109 Info Starting application... 
+2025-03-21 08:33:17.5595 Info Now listening on: https://localhost:7208 
+2025-03-21 08:33:17.5595 Info Now listening on: http://localhost:5254 
+2025-03-21 08:33:17.6027 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 08:33:17.6027 Info Hosting environment: Development 
+2025-03-21 08:33:17.6027 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 08:33:18.4519 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 08:33:18.6818 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 231.7808ms 
+2025-03-21 08:33:18.6818 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 08:33:18.6818 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 08:33:18.6818 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 08:33:18.6818 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.5668ms 
+2025-03-21 08:33:18.6818 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 4.5658ms 
+2025-03-21 08:33:18.7423 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 51.2390ms 
+2025-03-21 08:33:18.8373 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 08:33:18.8455 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.1338ms 
+2025-03-21 08:39:25.8966 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 08:39:25.9171 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:39:25.9543 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 08:39:26.6880 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 08:39:27.5408 Info Executed DbCommand (77ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 08:42:20.5000 Error Exception: Object reference not set to an instance of an object. 
+2025-03-21 08:42:20.5000 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 08:42:20.5241 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 174554.779ms 
+2025-03-21 08:42:20.5249 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:42:20.5249 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 500 - application/json;+charset=utf-8 174636.6059ms 
+2025-03-21 08:45:19.5260 Info Starting application... 
+2025-03-21 08:45:19.7785 Info Now listening on: https://localhost:7208 
+2025-03-21 08:45:19.7785 Info Now listening on: http://localhost:5254 
+2025-03-21 08:45:19.8096 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 08:45:19.8096 Info Hosting environment: Development 
+2025-03-21 08:45:19.8096 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 08:45:20.4200 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 08:45:20.5305 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 111.0981ms 
+2025-03-21 08:45:20.5421 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 08:45:20.5421 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 08:45:20.5421 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.7924ms 
+2025-03-21 08:45:20.5421 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 3.7807ms 
+2025-03-21 08:45:20.5421 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 08:45:20.5683 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.7175ms 
+2025-03-21 08:45:20.8205 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 08:45:20.8269 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 6.4399ms 
+2025-03-21 08:45:34.3785 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 08:45:34.3785 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:45:34.4322 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 08:45:35.2519 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 08:45:36.0537 Info Executed DbCommand (83ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 08:45:36.2673 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 08:45:36.2673 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 1837.1193ms 
+2025-03-21 08:45:36.2755 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 08:45:36.2755 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 200 - application/json;+charset=utf-8 1906.4564ms 
