@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ModelLayer.DTO;
 using ModelLayer.Model.DTO;
 using ModelLayer.Model.Entities;
 
@@ -18,5 +19,7 @@ namespace BusinessLayer.Interface
         bool DeleteGreetingMessage(int id);
         Task<string> Register(RegisterDTO model);
         Task<string> Login(LoginDTO model);
+        Task<string> ForgotPassword(ForgotPasswordDTO model);
+        Task<string> ResetPassword(ResetPasswordDTO model);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
+using ModelLayer.DTO;
 using ModelLayer.Model.DTO;
 
 namespace Register_JWT.Controllers
@@ -9,6 +10,7 @@ namespace Register_JWT.Controllers
     public class RegController : Controller
     {
         private readonly IGreetingBL _greetingBL;
+
         public RegController(IGreetingBL greetingBL)
         {
             _greetingBL = greetingBL;
@@ -35,5 +37,20 @@ namespace Register_JWT.Controllers
             }
             return Ok(new { token });
         }
+
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordDTO model)
+        {
+            var result = await _greetingBL.ForgotPassword(model);
+            return Ok(new { message = result });
+        }
+
+        [HttpPost("reset-password")]
+        public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordDTO model)
+        {
+            var result = await _greetingBL.ResetPassword(model);
+            return Ok(new { message = result });
+        }
+
     }
 }

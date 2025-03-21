@@ -17,5 +17,6 @@ namespace RepositoryLayer.Interface
         bool DeleteGreetingMessage(int id);
         Task<User> GetUserByEmail(string email);
         Task<User> RegisterUser(User user);
+        Task UpdateUser(User user);
     }
 }

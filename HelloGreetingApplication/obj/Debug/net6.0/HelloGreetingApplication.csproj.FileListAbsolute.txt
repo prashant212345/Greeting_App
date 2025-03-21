@@ -192,3 +192,4 @@ C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\bin\D
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\bin\Debug\net6.0\Middleware.dll
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\bin\Debug\net6.0\Middleware.pdb
 C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\bin\Debug\net6.0\BCrypt.Net-Next.dll

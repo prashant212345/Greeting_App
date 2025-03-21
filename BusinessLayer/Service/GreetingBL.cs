@@ -10,10 +10,13 @@ using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Mail;
+using System.Net;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using ModelLayer.DTO;
 
 namespace BusinessLayer.Service
 {
@@ -127,27 +130,122 @@ namespace BusinessLayer.Service
             }
             return true;
         }
+
+
+
+        public async Task<string> ForgotPassword(ForgotPasswordDTO model)
+        {
+            var user = await _greetingRL.GetUserByEmail(model.Email);
+            if (user == null)
+                return "User not found";
+
+            // Generate JWT Token for Password Reset
+            var token = GenerateJwtToken(user);
+
+            // Send Email
+            bool emailSent = SendEmail(user.Email, token);
+            if (!emailSent)
+                return "Error sending email";
+
+            return "Reset password link has been sent to your email.";
+        }
+
+        public async Task<string> ResetPassword(ResetPasswordDTO model)
+        {
+            var email = ValidateJwtToken(model.Token);
+            if (email == null)
+                return "Invalid or expired token";
+
+            var user = await _greetingRL.GetUserByEmail(email);
+            if (user == null)
+                return "User not found";
+
+            user.Password = HashPassword(model.NewPassword);
+            await _greetingRL.UpdateUser(user);
+
+            return "Password reset successful!";
+        }
+
         private string GenerateJwtToken(User user)
         {
             var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Secret"]);
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                new Claim("FirstName", user.FirstName),
-                new Claim("LastName", user.LastName)
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
             };
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.UtcNow.AddHours(2),
+                expires: DateTime.UtcNow.AddMinutes(15),
                 signingCredentials: new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
             );
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+        private string ValidateJwtToken(string token)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.UTF8.GetBytes(_configuration["Jwt:Secret"]);
+
+            try
+            {
+                tokenHandler.ValidateToken(token, new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = _configuration["Jwt:Issuer"],
+                    ValidAudience = _configuration["Jwt:Audience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(key)
+                }, out SecurityToken validatedToken);
+
+                var jwtToken = (JwtSecurityToken)validatedToken;
+                return jwtToken.Subject;
+            }
+            catch
+            {
+                return null;
+            }
+        }
+
+        private bool SendEmail(string toEmail, string token)
+        {
+            try
+            {
+                string resetLink = $"https://yourapp.com/reset-password?token={token}";
+
+                MailMessage message = new MailMessage
+                {
+                    From = new MailAddress(_configuration["Smtp:FromEmail"]),
+                    Subject = "Password Reset Request",
+                    Body = $"Click the link below to reset your password:\n\n{resetLink}",
+                    IsBodyHtml = false
+                };
+                message.To.Add(toEmail);
+
+                SmtpClient smtpClient = new SmtpClient
+                {
+                    Host = _configuration["Smtp:Host"],
+                    Port = int.Parse(_configuration["Smtp:Port"]),
+                    Credentials = new NetworkCredential(
+                        _configuration["Smtp:Username"],
+                        _configuration["Smtp:Password"]
+                    ),
+                    EnableSsl = true
+                };
+
+                smtpClient.Send(message);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

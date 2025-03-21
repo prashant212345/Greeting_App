@@ -2188,3 +2188,545 @@ WHERE [u].[Email] = @__email_0
 2025-03-21 08:45:36.2673 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 1837.1193ms 
 2025-03-21 08:45:36.2755 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
 2025-03-21 08:45:36.2755 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 200 - application/json;+charset=utf-8 1906.4564ms 
+2025-03-21 11:20:52.2116 Info Starting application... 
+2025-03-21 11:20:53.6704 Info Now listening on: https://localhost:7208 
+2025-03-21 11:20:53.6817 Info Now listening on: http://localhost:5254 
+2025-03-21 11:20:53.7382 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 11:20:53.7382 Info Hosting environment: Development 
+2025-03-21 11:20:53.7382 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 11:20:54.5984 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 11:20:54.9904 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 394.2189ms 
+2025-03-21 11:20:55.0295 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 11:20:55.0295 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 11:20:55.0295 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 11:20:55.0788 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 49.1534ms 
+2025-03-21 11:20:55.0788 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 53.3147ms 
+2025-03-21 11:20:55.2537 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 222.3670ms 
+2025-03-21 11:20:55.3264 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 11:20:55.3378 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.4237ms 
+2025-03-21 11:21:12.9450 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 11:21:13.0214 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 11:21:13.0941 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 11:21:14.0727 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 11:21:15.1635 Info Executed DbCommand (85ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 11:21:15.5329 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 11:21:15.5329 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 2441.316ms 
+2025-03-21 11:21:15.5329 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 11:21:15.5504 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 200 - application/json;+charset=utf-8 2605.4576ms 
+2025-03-21 11:54:30.8286 Info Starting application... 
+2025-03-21 11:54:31.8197 Info Now listening on: https://localhost:7208 
+2025-03-21 11:54:31.8761 Info Now listening on: http://localhost:5254 
+2025-03-21 11:54:31.9159 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 11:54:31.9159 Info Hosting environment: Development 
+2025-03-21 11:54:31.9159 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 11:54:32.4096 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 11:54:32.6592 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 251.7361ms 
+2025-03-21 11:54:32.6879 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 11:54:32.6879 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 11:54:32.6879 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 1.9221ms 
+2025-03-21 11:54:32.6879 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 11:54:32.7199 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 31.9177ms 
+2025-03-21 11:54:32.7886 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.9016ms 
+2025-03-21 11:54:33.1454 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 11:54:33.1543 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.0373ms 
+2025-03-21 11:55:18.0080 Info Starting application... 
+2025-03-21 11:55:18.1804 Error Application startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\Program.cs:line 38
+2025-03-21 11:55:34.4762 Info Starting application... 
+2025-03-21 11:55:35.3695 Info Now listening on: https://localhost:7208 
+2025-03-21 11:55:35.3695 Info Now listening on: http://localhost:5254 
+2025-03-21 11:55:35.4116 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 11:55:35.4116 Info Hosting environment: Development 
+2025-03-21 11:55:35.4116 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 11:55:35.8271 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 11:55:36.0907 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 264.9115ms 
+2025-03-21 11:55:36.1155 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 11:55:36.1155 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 11:55:36.1206 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 5.1411ms 
+2025-03-21 11:55:36.1433 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 27.8287ms 
+2025-03-21 11:55:36.1433 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 11:55:36.2202 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 75.3365ms 
+2025-03-21 11:55:36.3187 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 11:55:36.3541 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 35.3802ms 
+2025-03-21 11:56:48.9140 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 30 
+2025-03-21 11:56:48.9226 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 11:56:49.0275 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 11:56:49.6626 Info Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-21 11:56:49.6935 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 644.638ms 
+2025-03-21 11:56:49.6935 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 11:56:49.6974 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 30 - 400 - application/problem+json;+charset=utf-8 783.3825ms 
+2025-03-21 11:57:24.7866 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 32 
+2025-03-21 11:57:24.8061 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 11:57:24.8110 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(System.String) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 11:57:24.8298 Info Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'. 
+2025-03-21 11:57:24.8298 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 19.1496ms 
+2025-03-21 11:57:24.8298 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 11:57:24.8298 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 32 - 400 - application/problem+json;+charset=utf-8 43.9853ms 
+2025-03-21 11:59:33.5779 Info Starting application... 
+2025-03-21 11:59:34.5230 Info Now listening on: https://localhost:7208 
+2025-03-21 11:59:34.5287 Info Now listening on: http://localhost:5254 
+2025-03-21 11:59:34.5613 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 11:59:34.5613 Info Hosting environment: Development 
+2025-03-21 11:59:34.5613 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 11:59:35.1236 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 11:59:35.5420 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 11:59:35.5420 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 11:59:35.5391 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 417.0972ms 
+2025-03-21 11:59:35.5420 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 11:59:35.5420 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 8.3944ms 
+2025-03-21 11:59:35.5705 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 28.4662ms 
+2025-03-21 11:59:35.6470 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 97.2554ms 
+2025-03-21 11:59:35.7622 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 11:59:35.7622 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 11.4940ms 
+2025-03-21 11:59:48.9533 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 33 
+2025-03-21 11:59:48.9533 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 11:59:49.0402 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 11:59:51.0914 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 11:59:53.3970 Info Executed DbCommand (297ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 11:59:54.4464 Error Exception: Value cannot be null. (Parameter 'address') 
+2025-03-21 11:59:54.4659 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 11:59:54.4811 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 5431.5037ms 
+2025-03-21 11:59:54.4811 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 11:59:54.5027 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 33 - 500 - application/json;+charset=utf-8 5549.4512ms 
+2025-03-21 12:14:02.7584 Info Starting application... 
+2025-03-21 12:14:03.8100 Info Now listening on: https://localhost:7208 
+2025-03-21 12:14:03.8100 Info Now listening on: http://localhost:5254 
+2025-03-21 12:14:03.8717 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 12:14:03.8717 Info Hosting environment: Development 
+2025-03-21 12:14:03.8717 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 12:14:04.4570 Info Request starting HTTP/2 GET https://localhost:7208/swagger - - 
+2025-03-21 12:14:04.6438 Info Request finished HTTP/2 GET https://localhost:7208/swagger - - - 301 0 - 188.5473ms 
+2025-03-21 12:14:04.6552 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 12:14:04.7543 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 99.0381ms 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/swagger/swagger-ui.css - - 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.css - - 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/swagger/swagger-ui-standalone-preset.js - - 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 12:14:04.7629 Info Request starting HTTP/2 GET https://localhost:7208/swagger/swagger-ui-bundle.js - - 
+2025-03-21 12:14:04.7629 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 1.4806ms 
+2025-03-21 12:14:04.7629 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 4.7720ms 
+2025-03-21 12:14:04.7806 Info Sending file. Request path: '/index.css'. Physical path: 'N/A' 
+2025-03-21 12:14:04.8105 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.css - - - 200 202 text/css 47.4301ms 
+2025-03-21 12:14:04.8246 Info Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2025-03-21 12:14:04.8246 Info Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2025-03-21 12:14:04.8246 Info Request finished HTTP/2 GET https://localhost:7208/swagger/swagger-ui.css - - - 200 154948 text/css 67.8450ms 
+2025-03-21 12:14:04.8246 Info Request finished HTTP/2 GET https://localhost:7208/swagger/swagger-ui-standalone-preset.js - - - 200 229223 application/javascript 66.6678ms 
+2025-03-21 12:14:04.8679 Info Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2025-03-21 12:14:04.8679 Info Request finished HTTP/2 GET https://localhost:7208/swagger/swagger-ui-bundle.js - - - 200 1466324 application/javascript 102.6902ms 
+2025-03-21 12:14:04.8930 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 128.7185ms 
+2025-03-21 12:14:05.0156 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 12:14:05.0156 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 9.1747ms 
+2025-03-21 12:14:05.0397 Info Request starting HTTP/2 GET https://localhost:7208/swagger/favicon-32x32.png - - 
+2025-03-21 12:14:05.0397 Info Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2025-03-21 12:14:05.0397 Info Request finished HTTP/2 GET https://localhost:7208/swagger/favicon-32x32.png - - - 200 628 image/png 0.4144ms 
+2025-03-21 12:14:19.4057 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 12:14:19.4191 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 12:14:19.5047 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 12:14:21.5038 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 12:14:23.9336 Info Executed DbCommand (280ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 12:14:24.6675 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 12:14:24.6675 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 5166.4565ms 
+2025-03-21 12:14:24.6675 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 12:14:24.6947 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 200 - application/json;+charset=utf-8 5289.0925ms 
+2025-03-21 12:14:44.5093 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 33 
+2025-03-21 12:14:44.5361 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 12:14:44.5419 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 12:14:44.5419 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 12:14:44.6044 Info Executed DbCommand (22ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 12:14:44.7754 Error Exception: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '160' bits. See https://aka.ms/IdentityModel/UnsafeRelaxHmacKeySizeValidation (Parameter 'keyBytes') 
+2025-03-21 12:14:44.7754 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 12:14:44.7754 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 236.8137ms 
+2025-03-21 12:14:44.7754 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 12:14:44.7754 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 33 - 500 - application/json;+charset=utf-8 272.0836ms 
+2025-03-21 12:15:33.4200 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/register application/json 111 
+2025-03-21 12:15:33.4200 Info Executing endpoint 'Register_JWT.Controllers.RegController.Register (HelloGreetingApplication)' 
+2025-03-21 12:15:33.4477 Info Route matched with {action = "Register", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(ModelLayer.Model.DTO.RegisterDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 12:15:33.5716 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 12:15:33.5716 Info Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 12:15:34.1526 Info Executed DbCommand (60ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [FirstName], [LastName], [Password])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [Id]
+FROM [Users]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity(); 
+2025-03-21 12:15:34.2801 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 12:15:34.2801 Info Executed action Register_JWT.Controllers.RegController.Register (HelloGreetingApplication) in 833.5848ms 
+2025-03-21 12:15:34.2801 Info Executed endpoint 'Register_JWT.Controllers.RegController.Register (HelloGreetingApplication)' 
+2025-03-21 12:15:34.2801 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/register application/json 111 - 200 - application/json;+charset=utf-8 861.5861ms 
+2025-03-21 12:15:53.3059 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 60 
+2025-03-21 12:15:53.3187 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 12:15:53.3187 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 12:15:53.3187 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 12:15:53.4022 Info Executed DbCommand (81ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 12:15:53.4022 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 12:15:53.4022 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 90.2647ms 
+2025-03-21 12:15:53.4022 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 12:15:53.4022 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 60 - 200 - application/json;+charset=utf-8 103.9173ms 
+2025-03-21 12:16:00.8864 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 12:16:00.8864 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 12:16:00.8864 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 12:16:00.8864 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 12:16:00.8864 Info Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 12:16:01.0114 Error Exception: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '160' bits. See https://aka.ms/IdentityModel/UnsafeRelaxHmacKeySizeValidation (Parameter 'keyBytes') 
+2025-03-21 12:16:01.0114 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 12:16:01.0114 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 123.7887ms 
+2025-03-21 12:16:01.0114 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 12:16:01.0114 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 500 - application/json;+charset=utf-8 125.8057ms 
+2025-03-21 14:13:23.3165 Info Starting application... 
+2025-03-21 14:13:24.3877 Info Now listening on: https://localhost:7208 
+2025-03-21 14:13:24.3877 Info Now listening on: http://localhost:5254 
+2025-03-21 14:13:24.4421 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 14:13:24.4421 Info Hosting environment: Development 
+2025-03-21 14:13:24.4421 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 14:13:26.6559 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 14:13:26.9747 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 316.7199ms 
+2025-03-21 14:13:26.9909 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 14:13:26.9909 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 14:13:26.9909 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 14:13:27.0047 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 13.7938ms 
+2025-03-21 14:13:27.0106 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 17.7978ms 
+2025-03-21 14:13:27.1390 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 148.1200ms 
+2025-03-21 14:13:27.2498 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 14:13:27.2629 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 13.0630ms 
+2025-03-21 14:13:50.6261 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:13:50.6428 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:13:50.7440 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:13:52.8605 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:13:55.3516 Info Executed DbCommand (196ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:13:56.3387 Error Exception: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '160' bits. See https://aka.ms/IdentityModel/UnsafeRelaxHmacKeySizeValidation (Parameter 'keyBytes') 
+2025-03-21 14:13:56.3582 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 14:13:56.4121 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 5626.2564ms 
+2025-03-21 14:13:56.4121 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:13:56.4340 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 500 - application/json;+charset=utf-8 5807.9101ms 
+2025-03-21 14:14:30.0361 Info Starting application... 
+2025-03-21 14:14:30.8683 Info Now listening on: https://localhost:7208 
+2025-03-21 14:14:30.8683 Info Now listening on: http://localhost:5254 
+2025-03-21 14:14:30.9073 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 14:14:30.9073 Info Hosting environment: Development 
+2025-03-21 14:14:30.9073 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 14:14:31.6353 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 14:14:31.9716 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 338.1943ms 
+2025-03-21 14:14:31.9957 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 14:14:31.9957 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 14:14:31.9957 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 14:14:31.9957 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 4.9685ms 
+2025-03-21 14:14:31.9957 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 7.5020ms 
+2025-03-21 14:14:32.0993 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 103.5137ms 
+2025-03-21 14:14:32.2025 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 14:14:32.2025 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.0218ms 
+2025-03-21 14:14:51.6580 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:14:51.6715 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:14:51.7503 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:14:53.7256 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:14:56.1850 Info Executed DbCommand (276ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:14:57.0684 Error Exception: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '160' bits. See https://aka.ms/IdentityModel/UnsafeRelaxHmacKeySizeValidation (Parameter 'keyBytes') 
+2025-03-21 14:14:57.0853 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 14:14:57.0998 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 5315.947ms 
+2025-03-21 14:14:57.0998 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:14:57.1308 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 500 - application/json;+charset=utf-8 5472.7904ms 
+2025-03-21 14:19:10.0826 Info Starting application... 
+2025-03-21 14:19:10.9832 Info Now listening on: https://localhost:7208 
+2025-03-21 14:19:10.9832 Info Now listening on: http://localhost:5254 
+2025-03-21 14:19:11.0220 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 14:19:11.0220 Info Hosting environment: Development 
+2025-03-21 14:19:11.0220 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 14:19:11.5889 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 14:19:11.9325 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 345.0120ms 
+2025-03-21 14:19:12.0228 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 14:19:12.0257 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.8120ms 
+2025-03-21 14:19:12.0257 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 14:19:12.0257 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 14:19:12.0462 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 9.3964ms 
+2025-03-21 14:19:12.1345 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 95.5255ms 
+2025-03-21 14:19:12.4899 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 14:19:12.4984 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.6266ms 
+2025-03-21 14:19:38.5814 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:19:38.6258 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:19:38.7004 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:19:40.6770 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:19:42.9655 Info Executed DbCommand (278ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:20:47.5377 Info Executing BadRequestObjectResult, writing value of type 'System.String'. 
+2025-03-21 14:20:47.5773 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 68843.7904ms 
+2025-03-21 14:20:47.6141 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:20:47.6661 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 400 - text/plain;+charset=utf-8 69084.6604ms 
+2025-03-21 14:25:51.6496 Info Starting application... 
+2025-03-21 14:25:52.7268 Info Now listening on: https://localhost:7208 
+2025-03-21 14:25:52.7340 Info Now listening on: http://localhost:5254 
+2025-03-21 14:25:52.7894 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 14:25:52.7906 Info Hosting environment: Development 
+2025-03-21 14:25:52.7906 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 14:25:53.3724 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 14:25:53.6347 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 263.6010ms 
+2025-03-21 14:25:53.6527 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 14:25:53.6527 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 14:25:53.6527 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.2676ms 
+2025-03-21 14:25:53.6866 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 14:25:53.6866 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 35.2629ms 
+2025-03-21 14:25:53.7847 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 109.8486ms 
+2025-03-21 14:25:53.8752 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 14:25:53.8919 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 16.6988ms 
+2025-03-21 14:26:10.0046 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:26:10.0187 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:26:10.1005 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:26:12.0960 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:26:14.2953 Info Executed DbCommand (201ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:27:18.5740 Info Executing BadRequestObjectResult, writing value of type 'System.String'. 
+2025-03-21 14:27:18.5914 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 68481.2763ms 
+2025-03-21 14:27:18.5914 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:27:18.6170 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 400 - text/plain;+charset=utf-8 68612.4154ms 
+2025-03-21 14:36:28.8807 Info Starting application... 
+2025-03-21 14:36:29.8688 Info Now listening on: https://localhost:7208 
+2025-03-21 14:36:29.8752 Info Now listening on: http://localhost:5254 
+2025-03-21 14:36:29.9182 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 14:36:29.9182 Info Hosting environment: Development 
+2025-03-21 14:36:29.9182 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 14:36:30.3363 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 14:36:30.5920 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 257.7336ms 
+2025-03-21 14:36:30.6062 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 14:36:30.6062 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 14:36:30.6062 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 14:36:30.6230 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 6.9171ms 
+2025-03-21 14:36:30.6230 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 25.7068ms 
+2025-03-21 14:36:30.7107 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 97.7392ms 
+2025-03-21 14:36:30.7898 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 14:36:30.7980 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4898ms 
+2025-03-21 14:37:00.9742 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:37:00.9895 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:37:01.0645 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:37:03.0031 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:37:05.2139 Info Executed DbCommand (278ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:37:05.6513 Error Exception: String reference not set to an instance of a String. (Parameter 's') 
+2025-03-21 14:37:05.6658 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 14:37:05.6658 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 4607.0682ms 
+2025-03-21 14:37:05.7124 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:37:05.7314 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 500 - application/json;+charset=utf-8 4757.2413ms 
+2025-03-21 14:38:44.7473 Info Starting application... 
+2025-03-21 14:38:45.7179 Info Now listening on: https://localhost:7208 
+2025-03-21 14:38:45.7179 Info Now listening on: http://localhost:5254 
+2025-03-21 14:38:45.7838 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 14:38:45.7838 Info Hosting environment: Development 
+2025-03-21 14:38:45.7838 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 14:38:46.2316 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 14:38:46.5009 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 271.8945ms 
+2025-03-21 14:38:46.5247 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 14:38:46.5247 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 14:38:46.5247 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 14:38:46.5272 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.4821ms 
+2025-03-21 14:38:46.5272 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 5.7497ms 
+2025-03-21 14:38:46.5896 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.6117ms 
+2025-03-21 14:38:46.7084 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 14:38:46.7156 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.2366ms 
+2025-03-21 14:39:03.7907 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:39:03.7999 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:39:03.8790 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:39:05.8849 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:39:08.1137 Info Executed DbCommand (245ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:39:08.5659 Error Exception: String reference not set to an instance of a String. (Parameter 's') 
+2025-03-21 14:39:08.5802 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 14:39:08.5937 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 4706.8144ms 
+2025-03-21 14:39:08.5937 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:39:08.6164 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 500 - application/json;+charset=utf-8 4825.7651ms 
+2025-03-21 14:40:03.6821 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 60 
+2025-03-21 14:40:03.7208 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 14:40:03.7208 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:40:03.7780 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:40:03.8806 Info Executed DbCommand (74ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:40:04.2303 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 14:40:04.2303 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 504.3883ms 
+2025-03-21 14:40:04.2303 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 14:40:04.2303 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 60 - 200 - application/json;+charset=utf-8 549.8804ms 
+2025-03-21 14:40:27.7331 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 14:40:27.7331 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:40:27.7331 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 14:40:27.8505 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 14:40:27.8585 Info Executed DbCommand (7ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 14:40:27.9524 Error Exception: String reference not set to an instance of a String. (Parameter 's') 
+2025-03-21 14:40:27.9524 Info Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 14:40:27.9524 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 210.4624ms 
+2025-03-21 14:40:27.9524 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 14:40:27.9524 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 500 - application/json;+charset=utf-8 220.2768ms 
+2025-03-21 16:42:13.4100 Info Starting application... 
+2025-03-21 16:42:14.7139 Info Now listening on: https://localhost:7208 
+2025-03-21 16:42:14.7139 Info Now listening on: http://localhost:5254 
+2025-03-21 16:42:14.8115 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 16:42:14.8115 Info Hosting environment: Development 
+2025-03-21 16:42:14.8115 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 16:42:15.2531 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 16:42:15.6783 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 429.5940ms 
+2025-03-21 16:42:15.6895 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 16:42:15.7035 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 16:42:15.7350 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 45.5406ms 
+2025-03-21 16:42:15.7432 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 16:42:15.7873 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 44.1128ms 
+2025-03-21 16:42:15.9080 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 204.4653ms 
+2025-03-21 16:42:15.9800 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 16:42:15.9800 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 10.7059ms 
+2025-03-21 16:42:30.6291 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 
+2025-03-21 16:42:30.6377 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 16:42:30.6675 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 16:42:31.4563 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 16:42:32.4622 Info Executed DbCommand (90ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 16:42:32.7725 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 16:42:32.7778 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 2107.0622ms 
+2025-03-21 16:42:32.7778 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 16:42:32.7985 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 57 - 200 - application/json;+charset=utf-8 2169.4440ms 
+2025-03-21 16:42:44.8436 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/login application/json 60 
+2025-03-21 16:42:44.8625 Info Executing endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 16:42:44.8625 Info Route matched with {action = "Login", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(ModelLayer.Model.DTO.LoginDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 16:42:44.8625 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 16:42:44.8889 Info Executed DbCommand (6ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 16:42:44.8889 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 16:42:44.8889 Info Executed action Register_JWT.Controllers.RegController.Login (HelloGreetingApplication) in 29.0722ms 
+2025-03-21 16:42:44.8889 Info Executed endpoint 'Register_JWT.Controllers.RegController.Login (HelloGreetingApplication)' 
+2025-03-21 16:42:44.8889 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/login application/json 60 - 200 - application/json;+charset=utf-8 48.7378ms 
+2025-03-21 17:07:44.4445 Info Starting application... 
+2025-03-21 17:07:44.6138 Error Application startup failed. Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\Program.cs:line 38
+2025-03-21 17:07:47.6022 Info Starting application... 
+2025-03-21 17:07:48.5236 Info Now listening on: https://localhost:7208 
+2025-03-21 17:07:48.5324 Info Now listening on: http://localhost:5254 
+2025-03-21 17:07:48.6109 Info Application started. Press Ctrl+C to shut down. 
+2025-03-21 17:07:48.6109 Info Hosting environment: Development 
+2025-03-21 17:07:48.6109 Info Content root path: C:\Users\Prashant\Desktop\GreetingApp\GreetingApp\HelloGreetingApplication\ 
+2025-03-21 17:07:48.9482 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.html - - 
+2025-03-21 17:07:49.2268 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.html - - - 200 - text/html;charset=utf-8 280.2241ms 
+2025-03-21 17:07:49.2454 Info Request starting HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - 
+2025-03-21 17:07:49.2454 Info Request starting HTTP/2 GET https://localhost:7208/swagger/index.js - - 
+2025-03-21 17:07:49.2454 Info Request starting HTTP/2 GET https://localhost:7208/_vs/browserLink - - 
+2025-03-21 17:07:49.2454 Info Request finished HTTP/2 GET https://localhost:7208/swagger/index.js - - - 200 - application/javascript;charset=utf-8 2.8962ms 
+2025-03-21 17:07:49.2454 Info Request finished HTTP/2 GET https://localhost:7208/_framework/aspnetcore-browser-refresh.js - - - 200 12380 application/javascript;+charset=utf-8 5.4044ms 
+2025-03-21 17:07:49.3226 Info Request finished HTTP/2 GET https://localhost:7208/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 76.0677ms 
+2025-03-21 17:07:49.4873 Info Request starting HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - 
+2025-03-21 17:07:49.4944 Info Request finished HTTP/2 GET https://localhost:7208/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 7.0348ms 
+2025-03-21 17:08:02.0549 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 33 
+2025-03-21 17:08:02.0621 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 17:08:02.1482 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 17:08:04.2219 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 17:08:06.4987 Info Executed DbCommand (255ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 17:08:11.0255 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 17:08:11.0255 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 8882.5939ms 
+2025-03-21 17:08:11.0255 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 17:08:11.0576 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 33 - 200 - application/json;+charset=utf-8 9002.7105ms 
+2025-03-21 17:11:38.6552 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 17:11:38.6552 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 17:11:38.6552 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 17:11:38.7856 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 17:11:38.8396 Info Executed DbCommand (16ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 17:11:42.4091 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 17:11:42.4091 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 3744.2067ms 
+2025-03-21 17:11:42.4091 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 17:11:42.4091 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 200 - application/json;+charset=utf-8 3755.4469ms 
+2025-03-21 17:15:49.0203 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/reset-password application/json 320 
+2025-03-21 17:15:49.0375 Info Executing endpoint 'Register_JWT.Controllers.RegController.ResetPassword (HelloGreetingApplication)' 
+2025-03-21 17:15:49.0560 Info Route matched with {action = "ResetPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(ModelLayer.DTO.ResetPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 17:15:49.3711 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 17:15:49.3833 Info Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 17:15:49.6412 Info Executed DbCommand (18ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Email] = @p0, [FirstName] = @p1, [LastName] = @p2, [Password] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT; 
+2025-03-21 17:15:49.7168 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 17:15:49.7168 Info Executed action Register_JWT.Controllers.RegController.ResetPassword (HelloGreetingApplication) in 661.1723ms 
+2025-03-21 17:15:49.7168 Info Executed endpoint 'Register_JWT.Controllers.RegController.ResetPassword (HelloGreetingApplication)' 
+2025-03-21 17:15:49.7168 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/reset-password application/json 320 - 200 - application/json;+charset=utf-8 701.5037ms 
+2025-03-21 17:15:55.5020 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 
+2025-03-21 17:15:55.5020 Info Executing endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 17:15:55.5020 Info Route matched with {action = "ForgotPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 17:15:55.5214 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 17:15:55.5214 Info Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 17:16:02.3765 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 17:16:02.3765 Info Executed action Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication) in 6857.102ms 
+2025-03-21 17:16:02.3765 Info Executed endpoint 'Register_JWT.Controllers.RegController.ForgotPassword (HelloGreetingApplication)' 
+2025-03-21 17:16:02.3765 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/forgot-password application/json 36 - 200 - application/json;+charset=utf-8 6875.1948ms 
+2025-03-21 17:16:50.7680 Info Request starting HTTP/2 POST https://localhost:7208/api/Reg/reset-password application/json 321 
+2025-03-21 17:16:50.7680 Info Executing endpoint 'Register_JWT.Controllers.RegController.ResetPassword (HelloGreetingApplication)' 
+2025-03-21 17:16:50.7680 Info Route matched with {action = "ResetPassword", controller = "Reg"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ResetPassword(ModelLayer.DTO.ResetPasswordDTO) on controller Register_JWT.Controllers.RegController (HelloGreetingApplication). 
+2025-03-21 17:16:50.7860 Info Entity Framework Core 6.0.36 initialized 'GreetingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None 
+2025-03-21 17:16:50.8038 Info Executed DbCommand (17ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE [u].[Email] = @__email_0 
+2025-03-21 17:16:50.8172 Info Executed DbCommand (5ms) [Parameters=[@p4='?' (DbType = Int32), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Users] SET [Email] = @p0, [FirstName] = @p1, [LastName] = @p2, [Password] = @p3
+WHERE [Id] = @p4;
+SELECT @@ROWCOUNT; 
+2025-03-21 17:16:50.8172 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-03-21 17:16:50.8172 Info Executed action Register_JWT.Controllers.RegController.ResetPassword (HelloGreetingApplication) in 49.2068ms 
+2025-03-21 17:16:50.8172 Info Executed endpoint 'Register_JWT.Controllers.RegController.ResetPassword (HelloGreetingApplication)' 
+2025-03-21 17:16:50.8172 Info Request finished HTTP/2 POST https://localhost:7208/api/Reg/reset-password application/json 321 - 200 - application/json;+charset=utf-8 56.0610ms 

@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "Register_JWT.Controllers.RegController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/Reg/forgot-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ModelLayer.DTO.ForgotPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Register_JWT.Controllers.RegController",
     "Method": "Login",
     "RelativePath": "api/Reg/login",
     "HttpMethod": "POST",
@@ -26,6 +42,22 @@
       {
         "Name": "model",
         "Type": "ModelLayer.Model.DTO.RegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Register_JWT.Controllers.RegController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/Reg/reset-password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "ModelLayer.DTO.ResetPasswordDTO",
         "IsRequired": true
       }
     ],
